@@ -19,7 +19,7 @@ USER root
 RUN	apt-get install -y aria2 nmap traceroute
 
 # 3) install packages
-RUN pip install --no-cache-dir geopandas babypandas nltk wikipedia wordcloud gensim pyLDAvis
+RUN pip install --no-cache-dir geopandas babypandas wikipedia wordcloud gensim pyLDAvis
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
